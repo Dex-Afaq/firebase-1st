@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1</title>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    
+  
+
+</head>
+<body>
+   
+<label style="position: fixed; left: 850px; top: 50px;" >ENTER FIRST NAME:</label>
+  <input type="text" id="fname" style="margin-left:1050px; margin-top:50px;" name="fname" required>
+  <div class="row">
+      <div class="col-4" id="highscores">
+      <p>
+            <h1 id="forheader"></h1>
+            <h4 id="highest"></h4>
+            <ul id="scorelist">
+                
+            </ul>
+      </p>
+      </div>
+      <div class="col-3 container-fluid bg-dark" style="width:400px;height:400px; position: fixed; left: 850px;">
+            <h1 id="score" style="color: white; font-size: 100px; margin-left: 150px; padding-top: 120px;">0</h1>
+      </div>
+      <div class="container-fluid"  >
+             <button class="btn btn-dark btn-large" style="position: fixed; left: 850px; top:485px" id="count">CLICK ME!</button>
+             <button class="btn btn-dark btn-large" style="position: fixed; left: 1110px; top:485px"  id="submit">SUBMIT SCORES</button>
+             <button class="btn btn-dark btn-large" style="position: fixed; left: 950px; top:550px"  id="clearall">CLEAR ALL SCORES</button>
+             
+            
+       </div>
+    </div>
+<script src="java.js"></script>
+</body>
+</html>
+
